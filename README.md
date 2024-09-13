@@ -39,3 +39,17 @@ $ GIT_USER=<Your GitHub username> yarn deploy
 ```
 
 If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+### Docker
+
+#### Build:
+```
+docker build -t tac-docs .
+```
+
+#### Run:
+```
+docker run -d -p 3000:3000 tac-docs
+```
+
+Now, TAC Docs should be accessible at http://localhost:3000
